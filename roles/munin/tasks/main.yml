@@ -1,0 +1,8 @@
+---
+- name: install munin-node client
+  include: munin-node.yml
+
+- name: install munin server
+  include: munin-server.yml
+  when: "ansible_hostname == aa_munin['server']"
+  

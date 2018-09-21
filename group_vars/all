@@ -1,0 +1,19 @@
+# networking
+site_network:
+  aa:
+    cidr: '192.168.1.0/24'
+
+site_packages_all:
+  - jed
+  - telnet
+  - net-tools
+  - iotop
+  - ntp
+  - ntpstat
+  - git
+  - gnupg
+  - pinentry-curses
+  - scdaemon
+  - ssh
+  - locate
+  - nmap

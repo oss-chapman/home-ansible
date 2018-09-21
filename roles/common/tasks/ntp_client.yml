@@ -1,0 +1,12 @@
+---
+- name: install ntpd
+  apt:
+    name: ntp
+    
+- name: add ntpd stats to munin
+  file:
+    state: link
+    src: /usr/share/munin/plugins/ntp_offset
+    dest: /etc/munin/plugins/ntp_offset
+    
+  notify: restart munin-node

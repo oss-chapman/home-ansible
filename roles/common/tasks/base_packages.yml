@@ -1,0 +1,5 @@
+---
+ - name: install base packages
+   apt:
+     name: '{{ site_packages_all }}'
+       
